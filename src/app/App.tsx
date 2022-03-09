@@ -7,11 +7,13 @@ import Trips from "./components/trips/Trips";
 
 function App() {
     return (
-        <div className={s.app}>
-            <Header />
-            <Search />
-            <RestingPlace />
-            <Trips />
+        <div className={s.background}>
+            <div className={s.app}>
+                <Header/>
+                <Search/>
+                <RestingPlace/>
+                <Trips/>
+            </div>
         </div>
     );
 }

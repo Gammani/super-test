@@ -1,4 +1,21 @@
 .header {
+    display: flex;
     height: 50px;
     background-color: aqua;
+    justify-content: flex-end;
+    border: solid 1px black;
+}
+
+.login {
+    border: solid 1px wheat;
+}
+
+.text {
+    margin: 8px;
+    display: inline-block;
+}
+
+.logon {
+    margin: 8px;
+    display: inline-block;
 }
