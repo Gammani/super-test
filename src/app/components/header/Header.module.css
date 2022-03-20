@@ -1,21 +1,8 @@
 .header {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 50px;
+    margin: 0px 25px 15px 25px;
     background-color: aqua;
-    justify-content: flex-end;
-    border: solid 1px black;
-}
-
-.login {
-    border: solid 1px wheat;
-}
-
-.text {
-    margin: 8px;
-    display: inline-block;
-}
-
-.logon {
-    margin: 8px;
-    display: inline-block;
 }
