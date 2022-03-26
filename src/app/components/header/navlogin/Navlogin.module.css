@@ -1,7 +1,11 @@
 .nav_login {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 150px;
-    border: solid 1px;
+    border: solid 1px red;
+    border-radius: 7px;
+}
+.header_login_text {
+    color: red;
 }

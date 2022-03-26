@@ -1,5 +1,6 @@
 .search {
+    height: 35vh;
     display: flex;
     background-color: burlywood;
-    margin: 15px;
+    margin: 0px 25px 15px 25px;
 }
