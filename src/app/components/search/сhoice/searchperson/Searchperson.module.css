@@ -1,0 +1,4 @@
+.search_person {
+    display: flex;
+    flex-wrap: wrap;
+}

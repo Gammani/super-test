@@ -6,8 +6,10 @@ import Choice from "./сhoice/Choice";
 const Search = () => {
     return (
         <div className={s.search}>
-            <Expression />
-            <Choice />
+            <div className={s.search_container} >
+                <Expression />
+                <Choice />
+            </div>
         </div>
     )
 }

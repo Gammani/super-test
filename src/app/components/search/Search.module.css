@@ -1,6 +1,14 @@
 .search {
     height: 35vh;
     display: flex;
-    background-color: burlywood;
-    margin: 0px 25px 15px 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 25px 15px 25px;
+}
+
+.search_container {
+    width: 700px;
+    flex-direction: column;
+    justify-content: space-around;
 }
