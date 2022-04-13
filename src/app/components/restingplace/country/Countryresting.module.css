@@ -1,0 +1,11 @@
+.coutryresting {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}

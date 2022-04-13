@@ -1,0 +1,20 @@
+.namecountry {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid red;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    background-color: lightgoldenrodyellow;
+}
+
+.namecountry_icon {
+    padding: 10px;
+    font-size: 35px;
+}
+
+.namecountry_country {
+    padding: 10px;
+    font-size: 35px;
+}

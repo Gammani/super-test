@@ -6,8 +6,10 @@ import Navlogin from "./navlogin/Navlogin";
 const Header = () => {
     return (
         <div className={s.header}>
-            <Navheader />
-            <Navlogin />
+            <div className={s.header_container}>
+                <Navheader />
+                <Navlogin />
+            </div>
         </div>
     )
 }

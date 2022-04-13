@@ -1,10 +1,12 @@
 import React from "react";
-import s from "./RestingPlace.module.css"
+import s from "./RestingPlace.module.css";
+import Countryresting from "./country/Countryresting";
 
 const RestingPlace = () => {
     return (
         <div className={s.restingPlace}>
-            test 3
+            <Countryresting />
+            <Countryresting />
         </div>
     )
 }

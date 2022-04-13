@@ -1,4 +1,8 @@
 .restingPlace {
-    height: 500px;
-    background-color: chartreuse;
+    height: 400px;
+    margin: 0px 50px 15px 50px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
