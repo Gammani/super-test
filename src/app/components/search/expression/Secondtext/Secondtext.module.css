@@ -1,0 +1,5 @@
+.search_text_second {
+    display: flex;
+    font: italic bold 20px Verdana, sans-serif;
+    padding: 0 200px;
+}

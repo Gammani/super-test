@@ -1,0 +1,12 @@
+.trips {
+    height: 400px;
+    width: 720px;
+    margin: 0px 50px 15px 50px;
+    padding: 25px;
+    border: solid red;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
