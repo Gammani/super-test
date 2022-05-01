@@ -1,11 +1,19 @@
 import React from 'react';
-import Users from "./Users";
+import {Route, Routes} from "react-router-dom";
+import NavBar from "./componenst/ui/NavBar";
+import Login from "./layouts/Login";
 
-function App() {
+const App = () => {
     return (
-        <>
-            <Users />
-        </>
+        <div className={"d-flex justify-content-center"}>
+            <NavBar />
+            <Routes>
+            <Route path={"/login"}>
+                <Route path={":type"} element={<Login/>}/>
+                <Route path={""} element={<Login/>}/>
+            </Route>
+            </Routes>
+        </div>
     );
 }
 

@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
-import {UsersType} from "./api/fake.api/users.api";
-import api from "./api/index";
-import User from "./User";
+import {UsersType} from "../api/fake.api/users.api";
+import api from "../api";
+import UserOld from "./UserOld";
 
 
-const Users = () => {
+const UsersOld = () => {
 
     const [users, setUsers] = useState<Array<UsersType> | undefined>(undefined);
 
@@ -15,10 +15,10 @@ const Users = () => {
     return (
         <div>
             {users && users.map((user) => (
-                <User user={user} key={user._id}/>
+                <UserOld user={user} key={user._id}/>
             ))}
         </div>
     );
 };
 
-export default Users;
+export default UsersOld;

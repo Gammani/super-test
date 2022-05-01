@@ -1,12 +1,12 @@
 import React from "react";
-import {UsersType} from "./api/fake.api/users.api";
-import Image from "./Image";
+import {UsersType} from "../api/fake.api/users.api";
+import ImageOld from "./ImageOld";
 
 type PropsType = {
     user: UsersType
 }
 
-const User: React.FC<PropsType> = ({user}) => {
+const UserOld: React.FC<PropsType> = ({user}) => {
     return (
         <div>
             <h1>{user.user}</h1>
@@ -24,9 +24,9 @@ const User: React.FC<PropsType> = ({user}) => {
                 <ul><b>review: </b> {user.review.map((item) => <li key={item}>{item}</li>)}</ul>
             </div>
             <h3>cost: {user.cost}</h3>
-            <Image id={user._id}/>
+            <ImageOld id={user._id}/>
         </div>
     );
 };
 
-export default User;
+export default UserOld;
