@@ -1,19 +1,22 @@
 import React from 'react';
-import s from './App.module.css';
-import Header from "./components/header/Header";
-import Search from "./components/search/Search";
-import RestingPlace from "./components/restingplace/Restingplace";
-import Trips from "./components/trips/Trips";
+import {Route, Routes} from "react-router-dom";
+import NavBar from "./componenst/ui/NavBar";
+import Login from "./layouts/Login";
+import Main from "./componenst/ui/Main";
+import Countries from "./componenst/ui/Countries";
 
-function App() {
+const App = () => {
     return (
-        <div className={s.background}>
-            <div className={s.app}>
-                <Header/>
-                <Search/>
-                <RestingPlace/>
-                <Trips/>
-            </div>
+        <div className={"d-flex justify-content-center"}>
+            <NavBar/>
+            <Routes>
+                <Route path={"/login"}>
+                    <Route path={":type"} element={<Login/>}/>
+                    <Route path={""} element={<Login/>}/>
+                </Route>
+                <Route path={"countries"} element={<Countries />}/>
+                <Route path={"/"} element={<Main/>}/>
+            </Routes>
         </div>
     );
 }
