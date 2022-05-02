@@ -4,7 +4,7 @@ type LocationType = {
     address: string
 }
 
-export type UsersType = {
+export type CountriesType = {
     _id: string
     user: string
     location: LocationType
@@ -15,7 +15,7 @@ export type UsersType = {
     bookmark: boolean
 }
 
-const lodgingObjects: Array<UsersType> = [
+const lodgingObjects: Array<CountriesType> = [
     {
         _id: "1",
         user: "Joan Slash",

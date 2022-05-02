@@ -1,7 +1,9 @@
 import users from "./fake.api/users.api";
+import countries from "./fake.api/countries.api";
 
 const API = {
-    users
+    users,
+    countries
 }
 
 export default API;

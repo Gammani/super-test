@@ -2,16 +2,20 @@ import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import NavBar from "./componenst/ui/NavBar";
 import Login from "./layouts/Login";
+import Main from "./componenst/ui/Main";
+import Countries from "./componenst/ui/Countries";
 
 const App = () => {
     return (
         <div className={"d-flex justify-content-center"}>
-            <NavBar />
+            <NavBar/>
             <Routes>
-            <Route path={"/login"}>
-                <Route path={":type"} element={<Login/>}/>
-                <Route path={""} element={<Login/>}/>
-            </Route>
+                <Route path={"/login"}>
+                    <Route path={":type"} element={<Login/>}/>
+                    <Route path={""} element={<Login/>}/>
+                </Route>
+                <Route path={"countries"} element={<Countries />}/>
+                <Route path={"/"} element={<Main/>}/>
             </Routes>
         </div>
     );

@@ -1,21 +1,21 @@
 import React, {useEffect, useState} from "react";
-import {UsersType} from "../api/fake.api/users.api";
+import {CountriesType} from "../api/fake.api/users.api";
 import api from "../api";
 import UserOld from "./UserOld";
 
 
 const UsersOld = () => {
 
-    const [users, setUsers] = useState<Array<UsersType> | undefined>(undefined);
+    const [countries, setCountries] = useState <Array<CountriesType> | undefined>(undefined);
 
     useEffect(() => {
-        api.users.fetchAll().then((data: any) => setUsers(data));
+        api.users.fetchAll().then((data: any) => setCountries(data));
     }, [])
 
     return (
         <div>
-            {users && users.map((user) => (
-                <UserOld user={user} key={user._id}/>
+            {countries && countries.map((country) => (
+                <UserOld countryy={country} key={country._id}/>
             ))}
         </div>
     );
